@@ -76,65 +76,76 @@
             font-size: 1.2rem;
             margin: 0 20px;
             padding-bottom: 10px; /* Space for underline */
-			position :relative; 
-			overflow :hidden; 
-		}
+            position: relative;
+            overflow: hidden;
+        }
 
-		nav a::after { 
-			content :''; 
-			position:absolute; 
-			bottom :0; 
-			left :50%; 
-			width :100%; 
-			height :2px; 
-			background :#00ff88; 
-			transform :translateX(-50%) scaleX(0); 
-			transition :transform .3s ease; 
-		}
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 100%;
+            height: 2px;
+            background: #00ff88;
+            transform: translateX(-50%) scaleX(0);
+            transition: transform .3s ease;
+        }
 
-		nav a:hover::after { 
-			transform :translateX(-50%) scaleX(1); 
-		}
+        nav a:hover::after {
+            transform: translateX(-50%) scaleX(1);
+        }
 
         section {
-			padding :60px20px; 
-			margin :30px auto; 
-			background-color:#282828; 
-			border-radius :15px; 
-			box-shadow :0px4px20pxrgba(255255255.2); 
-			max-width :1000px; 
-			text-align:center; 
-			opacity : .9; 
-			transform :translateY(20px); 
-			transition :transform .5s ease-in-out; 
-		}
+            padding: 60px 20px;
+            margin: 30px auto;
+            background-color: #282828;
+            border-radius: 15px;
+            box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.2);
+            max-width: 1000px;
+            text-align: center;
+            opacity: 0.9;
+            transform: translateY(20px);
+            transition: transform .5s ease-in-out;
+        }
 
-		section:hover { 
-			transform :scale(1.05); 
-		}
+        section:hover {
+            transform: scale(1.05);
+        }
 
-		h2 { 
-			color :#00ff88; 
-			margin-bottom :20px; 
-			font-size :2.5rem;  
-		}
+        h2 {
+            color: #00ff88;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
 
-		p { opacity:.7;}
-		
+        p {
+            opacity: 0.7;
+        }
+
         footer {
-           background-color:#000000; 
-           color:#ffffff; 
-           text-align:center; 
-           padding :20px ; 
-           margin-top :30px ; 
-           box-shadow :inset-4px-4px-10px rgba(255,255,255,.2); 
-       }
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.2);
+        }
 
-       footer a { color:#00ff88; text-decoration:none;}
+        footer a {
+            color: #00ff88;
+            text-decoration: none;
+        }
 
-       footer a:hover { text-decoration :underline;}
-       
-       @media (max-width :768px) { header h1 { font-size :2.5rem;} }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -155,8 +166,8 @@
 </nav>
 
 <section id="about">
-    <h2>About Chermodsc</h2>
-    <p>Chermodsc, also known as <span style="color:#00ff88;font-weight:bold;">Aldo Rafael Rizki</span>, is a gaming prodigy and developer.</p>
+    <h2>About</h2>
+    <p>Chermodsc, also known as <span style="color:#00ff88;font-weight:bold;">Aldo Rafael Rizki</span>, is a 14-year-old gaming prodigy and developer. Known for creating the non-root gaming module Vextrox, Aldo has made a name in the tech world for enhancing gaming performance and user experience.</p>
 </section>
 
 <section id="projects">
@@ -188,7 +199,6 @@
 </footer>
 
 <script>
-
 document.querySelectorAll('section').forEach(section => {
     section.addEventListener('mouseenter', () => {
         section.style.transition = "transform .5s ease-in-out";
@@ -202,4 +212,4 @@ document.querySelectorAll('section').forEach(section => {
 </script>
 
 </body>
-  </html>
+	    </html>
